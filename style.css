@@ -1,0 +1,195 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 171, 110);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-image: url("./lady.jpg"); */
+}
+
+::placeholder {
+    color: bisque;
+    opacity: 0.7;
+}
+
+a { 
+    text-decoration: none;
+    text-shadow: 0px 0px 2px ;
+    color:rgb(5, 68, 139)
+}
+
+.wrapper {
+    display: flex;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    box-shadow: 0px 0px 30px 5px;
+    border-radius: 21px;
+    
+}
+
+.panelBase{
+    height: 500px;
+    width: 400px;
+    padding: 50px;
+    color: rgb(255, 234, 223);
+}
+
+.leftPanel {
+    
+    /* background-image: url("./lady.jpg"); */
+    background:linear-gradient(0deg, rgba(255, 0, 21, 0.3), rgba(170, 0, 255, 0.3)), url("./lady.jpg");
+    background-size: cover;
+    line-height: 60px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.leftPanel p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    border: 0px;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 5px;
+    transition: 0.2s;
+}
+
+
+.faceBook {
+    background-color: blue;
+    box-shadow: 0px 10px 15px;
+}
+
+.faceBook:hover {
+    background-color: rgb(0, 0, 194);
+}
+
+.faceBook:active {
+    transform: translate(-1px,2px);
+    box-shadow: 0px 6px 10px;
+}
+
+.angryBirdApp {
+    width: 130px;
+    background-color: rgb(19, 153, 255);
+    box-shadow: 0px 10px 15px;
+}
+
+.angryBirdApp:hover {
+    background-color: rgb(15, 117, 196);
+}
+
+.angryBirdApp:active {
+    transform: translate(-1px,2px);
+    box-shadow: 0px 6px 10px;
+}
+
+.rightPanel {
+    height: 500px;
+    width: 400px;
+    background:linear-gradient(0deg, rgba(170, 0, 255, 0.616) , rgba(255, 0, 21, 0.411));
+    border-radius: 0px 20px 20px 0px;
+    padding-top: 40px;
+}
+
+.rightPanel p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.inLog {
+    margin-top: 15px;
+    background-color: rgba(68, 68, 68, 0.171);
+    height: 40px;
+    width: 300px;
+    border: 0px solid;
+    border-bottom: 2px rgb(240, 34, 34) solid;
+    border-radius: 5px;
+    padding: 0px 15px;
+    margin-top: 30px;
+    font-size: 17px;
+    box-shadow: 0px 7px 20px rgb(134, 21, 21);
+    transition: 0.4s;
+}
+
+.inLog:focus {
+    outline: none;
+    box-shadow: 0px 0px 40px rgb(203, 206, 56);
+    transform: translate(0px,2px);
+    border-bottom: 1px rgb(203, 206, 56) solid;
+    width: 298px;
+    transform: translateX(1px);
+}
+
+.forgor {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.forgor > a {
+    text-decoration: none;
+    color: rgb(211, 165, 122);
+}
+.eula {
+    width: 20px;
+    height: 20px;
+    border: 20px red;
+}
+
+form > .btn {
+    background-color: rgb(100, 192, 39);
+    margin-top: 10px;
+    width: 100px;
+    box-shadow: 0px 10px 15px 1px rgb(64, 124, 25);
+    margin-left: auto;
+    display: block;
+}
+
+form > .btn:hover {
+    background-color: rgb(76, 146, 30);
+}
+
+form > .btn:active {
+    transform: translate(-1px,2px);
+    box-shadow: 0px 6px 10px rgb(36, 70, 13);
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        flex-direction: column;
+        width: 400px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .leftPanel {
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .rightPanel {
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    form .btn {
+        width: 100%;
+    }
+}
