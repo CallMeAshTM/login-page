@@ -174,7 +174,7 @@ form > .btn:active {
         flex-direction: column;
         width: 400px;
         margin-top: 15px;
-        margin-bottom: 15px;
+        margin-bottom: 16px;
     }
 
     .leftPanel {
